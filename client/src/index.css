@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&family=Noto+Serif+Thai:wght@600;700;800&family=Playfair+Display:wght@600;700&display=swap');
+@import "tailwindcss";
+
+:root { font-family: 'Noto Sans Thai', 'Noto Sans', Tahoma, sans-serif; color: #20251f; background: #f5f8f2; font-synthesis: none; line-height: 1.6; }
+body { margin: 0; min-width: 320px; line-height: 1.6; }
+button, input, select, textarea { font: inherit; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Noto Serif Thai', 'Noto Serif', serif; line-height: 1.3; }
+[class~="font-[Playfair_Display]"] { font-family: 'Playfair Display', 'Noto Serif Thai', 'Noto Serif', serif; }
+::selection { background: #cbe7c6; }
+
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, a:focus-visible {
+	outline: 2px solid #557d43;
+	outline-offset: 3px;
+	box-shadow: 0 0 0 2px #fffefa;
+}
+
+.fitness-shell {
+	background-color: #f5f8f2 !important;
+	background-image: radial-gradient(circle at 8% 8%, rgba(194, 224, 157, .35), transparent 28%), linear-gradient(rgba(69, 108, 64, .035) 1px, transparent 1px), linear-gradient(90deg, rgba(69, 108, 64, .035) 1px, transparent 1px);
+	background-size: auto, 44px 44px, 44px 44px;
+}
+
+.fitness-shell header { border-color: #d6e1d1 !important; }
+.fitness-shell > div > header { position: sticky; top: 0; z-index: 20; background: rgba(245, 248, 242, .88); padding-top: 1rem; backdrop-filter: blur(14px); }
+.fitness-shell header a { color: #193c2d; }
+.fitness-shell header a span:first-child { box-shadow: 0 0 0 6px rgba(117, 157, 76, .1); }
+.fitness-shell h1, .fitness-shell h2, .fitness-shell h3, .fitness-shell h4, .fitness-shell h5, .fitness-shell h6 { font-family: 'Noto Serif Thai', 'Noto Serif', serif; line-height: 1.3; }
+.fitness-hero h1 { color: #193c2d !important; }
+.fitness-hero p { color: #617064 !important; }
+.fitness-hero p:first-child { color: #6c913d !important; }
+.fitness-shell section#history h2,
+.fitness-shell section#account h2 { color: #193c2d !important; }
+.fitness-shell section#history > div:first-child p,
+.fitness-shell section#account > div p { color: #526453 !important; }
+.fitness-shell section.mt-8 { box-shadow: 0 18px 45px rgba(49, 91, 54, .08); }
+.dashboard-pulse { margin-top: -1rem; position: relative; z-index: 2; }
+.pulse-card { box-shadow: 0 10px 28px rgba(52, 91, 58, .06); }
+
+.scroll-section { scroll-margin-top: 24px; }
+.image-card img { aspect-ratio: 4 / 3; object-fit: cover; }
+.image-card { transition: transform .25s ease, box-shadow .25s ease; }
+.image-card img { transition: transform .35s ease; }
+.image-card:hover { transform: translateY(-4px); box-shadow: 0 16px 30px rgba(49, 91, 54, .12); }
+.image-card:hover img { transform: scale(1.04); }
+.model-bar { height: 10px; border-radius: 999px; background: #e5eee0; overflow: hidden; }
+.model-bar span { display: block; height: 100%; border-radius: inherit; background: #7da34d; }
+.activity-stat-number { color: #b35b32; }
+.stats-table td > span { display: block; margin-left: 0; margin-top: .3rem; line-height: 1.25; }
+.stats-table td { min-width: 120px; vertical-align: top; }
+.stats-table th { white-space: nowrap; }
+.detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
+@media (min-width: 640px) { .detail-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.progress-details button:focus-visible { outline: 3px solid rgba(125, 163, 78, .35); outline-offset: -3px; }
+
+:lang(th) :where(p, li, td, th, label, button, input, select, textarea) { line-height: 1.6 !important; }
+:lang(th) :where(h1, h2, h3, h4, h5, h6) { line-height: 1.3 !important; }
+:lang(th) [class*="tracking-"]:not(.english-label) { letter-spacing: 0 !important; }
+:lang(th) .english-label { letter-spacing: .14em !important; }
+:lang(th) .stats-table [class*="text-[#799757]"][class*="tracking-"],
+:lang(th) .scroll-section [class*="text-[#74924e]"][class*="tracking-"],
+:lang(th) .nutrition-workout [class*="text-[#b17c3f]"][class*="tracking-"],
+:lang(th) .nutrition-workout [class*="text-[#6d9250]"][class*="tracking-"],
+:lang(th) [class*="text-[#cbe78b]"][class*="tracking-"] { letter-spacing: .14em !important; }
+.fitness-shell [class*="text-[#839184]"],
+.fitness-shell [class*="text-[#849084]"],
+.fitness-shell [class*="text-[#8a948a]"],
+.fitness-shell [class*="text-[#8b938a]"],
+.fitness-shell [class*="text-[#889188]"],
+.fitness-shell [class*="text-[#7a847b]"],
+.fitness-shell [class*="text-[#7c897d]"],
+.fitness-shell [class*="text-[#718071]"],
+.fitness-shell [class*="text-[#9aa69a]"],
+.fitness-shell [class*="text-[#778477]"],
+.fitness-shell [class*="text-[#739443]"],
+.fitness-shell [class*="text-[#6b8b4d]"],
+.fitness-shell [class*="text-[#799d4c]"],
+.fitness-shell [class*="text-[#799757]"],
+.fitness-shell [class*="text-[#74924e]"],
+.fitness-shell [class*="text-[#71935a]"],
+.fitness-shell [class*="text-[#83a75b]"],
+.fitness-shell [class*="text-[#b17c3f]"],
+.fitness-shell [class*="text-[#c08c43]"],
+.fitness-shell [class*="text-[#6b8b4d]"],
+.fitness-shell [class*="text-[#6d9250]"],
+.fitness-shell [class*="text-[#a36243]"],
+.fitness-shell [class*="text-[#887468]"],
+.fitness-shell [class*="text-[#8a806f]"] { color: #526453 !important; }
+
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after {
+		animation-duration: .01ms !important;
+		animation-iteration-count: 1 !important;
+		scroll-behavior: auto !important;
+		transition-duration: .01ms !important;
+	}
+	.pulse-card:hover,
+	.image-card:hover { transform: none !important; }
+	.image-card:hover img { transform: none !important; }
+}
